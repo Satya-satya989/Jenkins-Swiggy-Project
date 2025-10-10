@@ -49,7 +49,7 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker-creds', toolName: 'docker'){   
                        sh "docker build -t swiggy ."
-                       sh "docker tag swiggy siyona/swiggy:latest "
+                       sh "docker tag swiggy Prashanthvirat/swiggy:latest "
                        sh "docker push Prashanthvirat/swiggy:latest "
                     }
                 }
