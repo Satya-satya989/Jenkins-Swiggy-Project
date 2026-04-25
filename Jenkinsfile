@@ -41,7 +41,7 @@ pipeline {
             steps {
                 sh 'docker stop swiggy-container || true'
                 sh 'docker rm swiggy-container || true'
-                sh 'docker run -d -p 3000:80 --name swiggy-container swiggy-app'
+                sh 'docker run -d -p 3003:80 --name swiggy-container swiggy-app'
             }
         }
     }
